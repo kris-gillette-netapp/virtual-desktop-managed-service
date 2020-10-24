@@ -1,0 +1,1 @@
+# virtual-desktop-managed-service
