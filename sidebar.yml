@@ -1,0 +1,12 @@
+entries:
+- title: Virtual Desktop Service documentation
+  url: /index.html
+
+- title: Deploying with VDS
+  entries:
+  - title: Azure
+    entries:
+    - title: Windows Virtual Desktop
+      entries:
+      - title: Deploying WVD in Azure
+        url: /guide_deploy_VDS_to_Azure.html
