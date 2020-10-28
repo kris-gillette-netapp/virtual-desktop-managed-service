@@ -18,7 +18,7 @@ keywords:
 
 [.lead]
 == Overview
-NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deploying and managing virtual desktops in the public cloud, delivered as a fully managed VDI as a Service platform. 
+NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deploying and managing virtual desktops in the public cloud, delivered as a fully managed VDI as a Service platform.
 
 //VIDEO HERE- TBD
 

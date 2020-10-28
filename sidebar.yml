@@ -1,12 +1,101 @@
 entries:
-- title: Virtual Desktop Service documentation
+- title: Virtual Desktop Managed Service documentation
   url: /index.html
 
-- title: Deploying with VDS
+- title: Management
   entries:
-  - title: Azure
+  - title: Applications
     entries:
-    - title: Windows Virtual Desktop
+    - title: Application catalog
+      url: /
+    - title: Install/uninstall applications
+      url: /
+    - title: Automate applications
+      url: /
+    - title: Assign Applications
+      url: /
+
+  - title: Users
+    entries:
+    - title: Create new user(s)
+      url: /
+    - title: Edit user info
+      url: /
+    - title: Locked user accounts
+      url: /
+    - title: Reset user password
+      url: /
+    - title: Delete user account(s)
+      url: /
+    - title: View/kill user processes
+      url: /
+    - title: Create new user(s)
+      url: /
+    - title: Loggoff user
+      url: /
+
+  - title: Automation
+    entries:
+    - title:
+      url: /
+
+  - title: Folders
+    entries:
+    - title: Create new folder
+      url: /
+    - title: Assign user/group permissions
+      url: /
+    - title: Folder permissions
+      url: /
+
+  - title: Security Groups
+    entries:
+    - title: Create security group
+      url: /
+    - title: Populate security group
+      url: /
+    - title: Delete security group
+      url: /
+
+  - title: Admins
+    entries:
+    - title:
+      url: /
+  - title: Servers
+    entries:
+    - title: Connect to server
+      url: /
+
+- title: Troubleshooting
+  entries:
+  - title: Performance
+    entries:
+    - title:
+      url: /
+  - title: Connection
+    entries:
+    - title: Testing ISP quality
+      url: /
+  - title: Disk
+    entries:
+    - title: Disk consumption
+      url: /
+  - title: 3rd Party Admin Access
+    entries:
+    - title:
+      url: /
+  - title: Backups
+    entries:
+    - title: Backup Policy
       entries:
-      - title: Deploying WVD in Azure
-        url: /guide_deploy_VDS_to_Azure.html
+    - title: Cloud backup
+      url: /
+    - title: Shadow copy backup
+      url: /
+
+  - title: Support Overview
+    url: /
+  - title: Tier 1 Support & Triage Expectations
+    url: /
+  - title: 3rd Party Admin Access
+    url: /
