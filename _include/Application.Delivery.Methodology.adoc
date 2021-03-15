@@ -1,0 +1,17 @@
+////
+
+Comments Sections:
+Used in:
+applications.installapplications.adoc
+images.updateimage.adoc
+
+////
+
+== Application Delivery Methodology
+Users can access any applications that are installed the session host virtual machine (SHVM) where their user session is running.
+
+Users are assigned to a pool of SHVMs ("host pool") based on their membership in a user group.  Every SHVM in that host pool is based on the same VM Image, has the same applications and runs on the same VM resources. Each time a user connects, they are assigned to SHVM in their host pool with the fewest current user sessions.
+
+By adding or removing applications from each SHVM in the host pool the VDMS administrator can control which applications VDMS users can access.
+
+Adding (or removing) applications from each SHVM can be performed directly on each SHVM or to a single VM Image which in turn can be deployed to all SHVMs in the host pool.

@@ -18,17 +18,13 @@ keywords:
 
 [.lead]
 == Overview
-NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deploying and managing virtual desktops in the public cloud, delivered as a fully managed VDI as a Service platform. 
-
-//VIDEO HERE- TBD
-
-=== Virtual Desktop Managed Service benefits:
+NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deploying and managing virtual desktops in the public cloud, delivered as a managed VDI as a Service platform.
 
 == Getting support
 
 Email support: VDSsupport@netapp.com
 
-Phone support: 844.645.6789 Ext. 2
+Phone support: 844.645.6789
 
 link:https://cloudjumper.zendesk.com[VDS support portal]
 
@@ -37,17 +33,6 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 * After hours (on-call) support available via phone only.
 
 == Additional resources
-
-=== Cost calculator
-==== Azure
-* link:https://v6.manage.cloudworkspace.com/cost-estimator[]
-
-=== Remote Desktop Services (RDS) clients
-* link:https://cwc.cloudworkspace.com/download/cwc-win-setup.exe[VDS RDS client for Windows]
-
-* link:https://login.cloudworkspace.com/[VDS web client]
-
-* link:https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients[Microsoft RD client]
 
 === Windows Virtual Desktop (WVD) clients
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-10[Microsoft WVD for Windows client]
@@ -59,9 +44,3 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-macos[Microsoft WVD for macOS client]
 
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-ios[Microsoft WVD for iOS client]
-
-
-=== Other downloads
-* link:https://cloudjumper.com/wp-content/uploads/2019/12/RemoteScanEnterpriseUser.zip[RemoteScan client]
-
-* link:https://cloudjumper.com/cloudworkspaceclient/designer/Cloud%20Workspace%20Designer.exe[VDS RDS Windows client designer]

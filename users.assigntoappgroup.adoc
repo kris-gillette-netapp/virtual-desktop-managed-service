@@ -1,0 +1,31 @@
+---
+sidebar: sidebar
+permalink: users.assigntoappgroup.html
+summary: Assigning users to App Groups in VDMS
+keywords:
+---
+= Assigning Users to App Groups
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+== User Assignment Methodology
+Users are assigned to a session host virtual machine (SHVM) through AD security groups.
+
+For each host pool, there is a linked user group on the "Users & Groups" tab within the workspace.
+
+User groups are named with the workspace ID (a unique 3-4 digit code for each workspace), followed by the name of the host pool.
+
+For example, the group "jzsx Shared Users" is linked to the Shared Users host pool in VDMS.  All users added to "jzsx Shared Users" will be assigned access to the session hosts in the "Shared Users" host pool.
+
+.To assign a user to their host pool
+. Navigate to "Users & Groups" within the workspace
+. Users can be added to the group by editing the user list within the group.
+. Automation will automatically sync the members of the user group such that the user will be granted access to the appropriate host pool, app group and applications.
+
+NOTE: Users should only be assigned to one (and only one) app group.  The type of host pool (Shared, VDI or GPU) must match the licensed SKUs purchased for VDMS.  Misalignment of users and/or assignment to multiple app groups will cause resource contention issues and potentially impact their colleagues working in the environment.
