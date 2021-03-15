@@ -1,0 +1,41 @@
+---
+sidebar: sidebar
+permalink: applications.installapplications.html
+summary: Installing applications on the session hosts within a host pool
+keywords:
+---
+= Installing applications on the session host virtual machine(s)
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+include::_include/Application.Delivery.Methodology.adoc[]
+
+This article covers directly installing applications on the SHVMs.  VM Image management is covered in link:images.updateimage.html[this article].
+
+=== Manual Access
+The VDMS management portal provides direct access to each VM via a just-in-time local admin account for all SHVMs and business servers.  This access can be used to manually connect to each VM to manually install applications and make other configuration changes.
+
+This functionality is found in Workspace > Servers > Actions > Connect
+
+[.thumb]
+image:applications.installapplications-171af.png[900,900]
+
+If domain admin credentials are required, VDMS privileged access management (PAM) functionality to generate domain admin credentials.  Details can be link:administration.pam.html[found here].
+
+=== VDMS Automation
+With the VDMS portal, the "Scripted Events" section includes functionality to remotely execute code.
+
+Within Scripted Events, the Repository tab contains "global" scripts that are published by NetApp.  Custom scripts can be added using the "+ Add Script" button.
+
+Within Scripted Events, the Activities tab contains the trigger that causes a script to execute against a set of VMs. For VDMS, the "Manual" and "Scheduled" event types are best to push a script across the appropriate virtual machines.
+
+NOTE: Activities have many available triggers called "Event Types". For VDMS, the "Application Install" and "Application Uninstall" types do not apply. These are RDS-specific triggers and should not be used for VDMS since VDMS is a WVD-based service, and does to follow the design architecture of RDS.
+
+=== Other Automation Tools
+Virtual machines in VDMS can be managed with 3rd party management tools.  Application changes and other VM configuration changes can be applied via any compatible tools.
