@@ -43,7 +43,7 @@ The invitation link (above) includes a request for delegated admin permissions. 
 == Virtual Network Scope
 VDMS will be deployed on a virtual network in Azure.  The /20 IP range used for this network can not overlap with other networks in their environment.
 
-In any scenario that adds network connectivity between the VDMS virtual network and any other customer network(s), overlap with another network IP range will break VDMS.  Therefore it is vital that a completely unused /20 range be dedicated to VDMS.  
+In any scenario that adds network connectivity between the VDMS virtual network and any other customer network(s), overlap with another network IP range will break VDMS.  Therefore it is vital that a completely unused /20 range be dedicated to VDMS.
 
 The /20 network scope needs to land within one of these IP ranges:
 
@@ -51,15 +51,20 @@ The /20 network scope needs to land within one of these IP ranges:
 * 172.16.0.0 – 172.31.255.255
 * 192.168.0.0 – 192.168.255.255
 
-== Existing AD Integration
-Integrating VDMS with an existing Active Directory domain controller (AD DC) requires several additional prerequisites:
-
 == Deploy VDMS Worksheet
 The customer/partner needs to complete the Deploy VDMS worksheet at:
 https://www.deployvdms.com/
 
+== Existing AD Integration
+Integrating VDMS with an existing Active Directory domain controller (AD DC) requires several additional prerequisites:
+
 === Local Domain Admin Credentials
-A local domain admin account on the existing domain is required to establish the integration.
+A local domain admin account with domainjoin rights, on the existing domain is required to establish the integration.
 
 === Azure AD Connect
 WVD required that Azure AD be synced with the AD DC using AD Connect. If this is not already setup, this link:https://www.microsoft.com/en-us/download/details.aspx?id=47594[utility] will need to be installed and configured on your AD DC.
+
+/=== Network Contributor Role for vNet Peering
+/=== Local Gateway Device Admin Rights to setup VPN
+/=== DNS Zones (need more tech info)
+/=== no multi-domain forrest, Users must be in the domain we are deploying to

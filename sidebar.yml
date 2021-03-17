@@ -4,15 +4,24 @@ entries:
 
 - title: Getting Started
   entries:
-  - title: Service Summary
-    url: /serviceoffering.servicesummary.html
+#  - title: Welcome to VDMS
+#    url: /
+#  - title: Licensing WVD
+#    url: /
   - title: Prerequsites
     url: /serviceoffering.prerequisites.html
 #  - title: Service Responsibilities
 #    url: /serviceoffering.responsibilities.html
-
+#  - title: Network Diagrams
+#    url: /
+  - title: Service Summary
+    url: /serviceoffering.servicesummary.html
 - title: Tutorials
   entries:
+#  - title: VDS Navigation
+#    url: /
+#  - title: Administrative Access
+#    url: /
   - title: Install Applications
     url: /applications.installapplications.html
   - title: Update & Deploy VM Image
@@ -21,11 +30,8 @@ entries:
     url: /users.assigntoappgroup.html
   - title: Get Domain Admin Credentials
     url: /administration.pam.html
-#- title: Users & Groups
-#  entries:
+
 #  - title: Add/Remove User Access
-#    url: /
-#  - title: Update & Deploy Image
 #    url: /
 #  - title: Assign Folder Permissions
 #    url: /
@@ -35,117 +41,62 @@ entries:
 #    url: /
 #  - title: Self-Service Restore Process
 #    url: /
-#  - title: Administrative Access
-#    url: /
-#
+
+
 #- title: Troubleshooting
 #  entries:
+#  - title: VM Images
 #    url: /
-#
-#- title: Integrations
-#  entries:
-#  - title:
+#  - title: User Connectivity
 #    url: /
-#
-#- title: VDMS FAQ's
-#  entries:
-#  - title:
+#  - title: Azure Cloud Status
 #    url: /
 
-#- title: OLD Management
+#- title: Components
 #  entries:
-#  - title: Applications
-#    entries:
-#    - title: Application catalog
-#      url: /
-#    - title: Install/uninstall applications
-#      url: /
-#    - title: Automate applications
-#      url: /
-#    - title: Assign Applications
-#      url: /
-#
-#  - title: Users
-#    entries:
-#    - title: Create new user(s)
-#      url: /
-#    - title: Edit user info
-#      url: /
-#    - title: Locked user accounts
-#      url: /
-#    - title: Reset user password
-#      url: /
-#    - title: Delete user account(s)
-#      url: /
-#    - title: View/kill user processes
-#      url: /
-#    - title: Create new user(s)
-#      url: /
-#    - title: Loggoff user
-#      url: /
-#
-#  - title: Automation
-#    entries:
-#    - title:
-#      url: /
-#
-#  - title: Folders
-#    entries:
-#    - title: Create new folder
-#      url: /
-#    - title: Assign user/group permissions
-#      url: /
-#    - title: Folder permissions
-#      url: /
-#
-#  - title: Security Groups
-#    entries:
-#    - title: Create security group
-#      url: /
-#    - title: Populate security group
-#      url: /
-#    - title: Delete security group
-#      url: /
-#
-#  - title: Admins
-#    entries:
-#    - title:
-#      url: /
-#  - title: Servers
-#    entries:
-#    - title: Connect to server
-#      url: /
-#
-#- title: Troubleshooting
+#  - title: SaaS Backup
+#    url: /
+#  - title: Azure Files
+#    url: /
+#  - title: Azure Cloud Backup
+#    url: /
+#  - title: Azure NetApp Files
+#    url: /
+#  - title: Azure File Sync
+#    url: /
+#  - title: NetApp Cloud Backup
+#    url: /
+#  - title: NetApp Cloud Sync
+#    url: /
+#  - title: Azure Defender
+#    url: /
+#  - title: Azure Virtual Machines
+#    url: /
+#  - title: Azure Virtual Network Peering
+#    url: /
+#  - title: Azure VPN
+#    url: /
+#  - title: NetApp Cloud Insights
+#    url: /
+#  - title: Windows Virtual Desktop (WVD)
+#    url: /
+#  - title: Azure AD Connect
+#    url: /
+#  - title: Microsoft 365
+#    url: /
+
+
+#- title: VDMS FAQ's
 #  entries:
-#  - title: Performance
-#    entries:
-#    - title:
-#      url: /
-#  - title: Connection
-#    entries:
-#    - title: Testing ISP quality
-#      url: /
-#  - title: Disk
-#    entries:
-#    - title: Disk consumption
-#      url: /
-#  - title: 3rd Party Admin Access
-#    entries:
-#    - title:
-#      url: /
-#  - title: Backups
-#    entries:
-#    - title: Backup Policy
-#      entries:
-#    - title: Cloud backup
-#      url: /
-#    - title: Shadow copy backup
-#      url: /
-#
-#  - title: Support Overview
+#  - title: Support
 #    url: /
-#  - title: Tier 1 Support & Triage Expectations
+#  - title: Disable AD Connect
 #    url: /
-#  - title: 3rd Party Admin Access
+#  - title: Network Diagram
+#    url: /
+#  - title: Backup Policy
+#    url: /
+#  - title: Patching
+#    url: /
+#  - title: Printing
 #    url: /
