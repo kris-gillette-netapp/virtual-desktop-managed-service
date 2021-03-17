@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: serviceoffering.responsibilities.html
+summary: VDMS service roles and responsibilities
+keywords:
+---
+= VDMS Service Roles and Responsibilities
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
