@@ -60,11 +60,11 @@ NOTE: *Don't edit these settings:*
 . Once ready, the support team will redirect all new user sessions to the new hosts.  We'll shut down the old hosts once no users are connected. These old VMs will remain in a deallocated state for warm failover but these VMs will be automatically purged after 7 days.
 
 === Changing the SHVM(s) directly
-Changes can be made directly on the SHVM(s) manually or via any available automation tools.
+Changes can be made directly on the SHVM(s) manually or via any available automation tools.  More information on this is found in link:applications.installapplications.html[this article].
 
 When making changes directly to the SHVMs in a host pool it is critical that each SHVM remain configured in the same way or users may have inconsistent experiences as they connect to different SHVMs.
 
 WARNING: By default, individual SHVMs are not backed up because they typically don't have unique data and are based on a standardized VM image. If you're making customizations directly to the SHVMs, please contact support to get a backup policy applied to one of the SHVMs in the host pool.
 
-=== SysPrep Troubleshooting
-The VDMS image "Validate" function uses Microsoft's SysPrep utility.  When validation fails, the most common culprit is a SysPrep failure.  To troubleshoot failures, start in the SysPrep log file located on the CWT# VM in the path: C:\windows\system32\sysprep\panther\setupact.log
+=== Sysprep Troubleshooting
+The VDMS image "Validate" function uses Microsoft's Sysprep utility.  When validation fails, the most common culprit is a Sysprep failure.  To troubleshoot failures, start in the Sysprep log file located on the CWT# VM in the path: C:\windows\system32\Sysprep\panther\setupact.log

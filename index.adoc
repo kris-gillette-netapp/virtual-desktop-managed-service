@@ -5,7 +5,7 @@ summary: Welcome to the documentation portal for Virtual Desktop Managed Service
 keywords:
 ---
 
-= Virtual Desktop Managed Service documentation
+= Virtual Desktop Managed Service Documentation
 
 :toc: macro
 :hardbreaks:
@@ -24,17 +24,15 @@ NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deployi
 
 Email support: VDSsupport@netapp.com
 
-Phone support: 844.645.6789
+Phone Support: 844.645.6789
 
-link:https://cloudjumper.zendesk.com[VDS support portal]
+link:https://cloudjumper.zendesk.com[VDMS Support Portal]
 
 Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 
 * After hours (on-call) support available via phone only.
 
-== Additional resources
-
-=== Windows Virtual Desktop (WVD) clients
+== Windows Virtual Desktop (WVD) clients
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-10[Microsoft WVD for Windows client]
 
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-web[Microsoft WVD web client]
@@ -44,3 +42,20 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-macos[Microsoft WVD for macOS client]
 
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-ios[Microsoft WVD for iOS client]
+
+== Service Components
+* SaaS Backup
+* Azure Files
+* Azure Cloud Backup
+* Azure NetApp Files
+* Azure File Sync
+* NetApp Cloud Backup
+* NetApp Cloud Sync
+* Azure Defender
+* Azure Virtual Machines
+* Azure Virtual Network Peering
+* Azure VPN
+* NetApp Cloud Insights
+* Windows Virtual Desktop (WVD)
+* AD Connect
+* Microsoft 365
