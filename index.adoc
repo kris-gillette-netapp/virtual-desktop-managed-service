@@ -57,5 +57,5 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 * Azure VPN
 * NetApp Cloud Insights
 * Windows Virtual Desktop (WVD)
-* AD Connect
+* Azure AD Connect
 * Microsoft 365
