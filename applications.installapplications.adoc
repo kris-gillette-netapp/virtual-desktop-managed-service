@@ -16,7 +16,7 @@ keywords:
 
 include::_include/Application.Delivery.Methodology.adoc[]
 
-This article covers directly installing applications on the SHVMs.  VM Image management is covered in link:images.updateimage.html[this article].
+This article covers directly installing applications on the SHVMs.  VM Image management is covered in link:images.updateimages.html[this article].
 
 === Manual Access
 The VDMS management portal provides direct access to each VM via a just-in-time local admin account for all SHVMs and business servers.  This access can be used to manually connect to each VM to manually install applications and make other configuration changes.
