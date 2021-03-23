@@ -86,8 +86,12 @@ entries:
 #    url: /
 
 
-#- title: VDMS FAQ's
-#  entries:
+- title: VDMS FAQ's
+  entries:
+  - title: VDS Admin Permissions
+    url: /FAQ.vdsadminpermissions.adoc
+#  - title: Reseller Relationship Security
+#    url: /
 #  - title: Support
 #    url: /
 #  - title: Disable AD Connect
