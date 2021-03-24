@@ -17,7 +17,8 @@ keywords:
 == User Resource Allocation
 NOTE: This article seeks to accurately describe the technical details of the VDMS service. Service details are subject to change and this article does not represent an amendment or alteration to any existing agreements, contracts or other arrangements between NetApp and any customers or partners.
 
-=== Shared Users
+=== Shared Users (SKU: VDMS-SUBS-SHARED-USER)
+
 Shared user sessions run on a Session Host Virtual Machine (SHVM) with up to 10 user sessions. The total number of shared SHVMs allocated will ensure at least one shared SHVM for every 10 shared users in the environment.
 
 *Resources allocated per shared user:*
@@ -34,7 +35,8 @@ Shared user sessions run on a Session Host Virtual Machine (SHVM) with up to 10 
 * FSLogix attached containers user profile
 * Attached storage for company share
 
-=== VDI Users
+=== VDI Users (SKU: VDMS-SUBS-VDI-USER)
+
 A VDI user's session runs on a dedicated Session Host Virtual Machine (SHVM) that does not concurrently host any other user sessions. The total number of VDI SHVMs is equal to the total number of VDI users in the environment.
 
 *Resources allocated per VDI user:*
@@ -51,7 +53,8 @@ A VDI user's session runs on a dedicated Session Host Virtual Machine (SHVM) tha
 * FSLogix attached containers user profile
 * Attached storage for company share
 
-=== GPU Users
+=== GPU Users (SKU: VDMS-SUBS-GPU-USER)
+
 A GPU user's session runs on a dedicated Session Host Virtual Machine (SHVM) that does not concurrently host any other user sessions. The total number of GPU SHVMs is equal to the total number of GPU users in the environment.
 
 *Resources allocated per GPU user:*
@@ -68,7 +71,8 @@ A GPU user's session runs on a dedicated Session Host Virtual Machine (SHVM) tha
 * Attached storage for company share
 
 == Other VDMS SKUs
-=== Business Servers
+=== Business Servers (SKU: VDMS-AZURE-BUSINESS-VM)
+
 The business server can be added to an environment to support applications and services.
 
 *Each business server VM is allocated at least:*
@@ -79,7 +83,8 @@ The business server can be added to an environment to support applications and s
 * Windows Server 2012R2/2016/2019
 * Typically from the link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series[Esv3], link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev4-esv4-series[Eav4] and link:https://docs.microsoft.com/en-us/azure/virtual-machines/eav4-easv4-series[Easv4] families of Azure virtual machines.
 
-=== Additional Storage
+=== Additional Storage (SKU: VDMS-1TB-STORAGE-HPRSCLR)
+
 The _Data Storage Layer_ is the primary storage mechanism for the VDMS environment and runs on either Azure Files or Azure NetApp Files (ANF). The storage technology used is determined by the total VDMS users purchased. Additional capacity can be added in 1TiB increments.
 
 User profiles, user data, company shares, application data and databases should all run from this storage service. It is best practice to avoid storing data on VM disks whenever possible.
