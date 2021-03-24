@@ -44,18 +44,44 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-ios[Microsoft WVD for iOS client]
 
 == Service Components
-* SaaS Backup
-* Azure Files
-* Azure Cloud Backup
-* Azure NetApp Files
-* Azure File Sync
-* NetApp Cloud Backup
-* NetApp Cloud Sync
-* Azure Defender
-* Azure Virtual Machines
-* Azure Virtual Network Peering
-* Azure VPN
-* NetApp Cloud Insights
-* Windows Virtual Desktop (WVD)
-* Azure AD Connect
-* Microsoft 365
+VDMS is a co-managed service offering that brings together multiple technologies from NetApp and Microsoft and applies best-practices learned over 20+ year in the EUC market.  Below a selected list of components are listed.  Not all components are used in all deployments due to varying customer requirements.
+=== NetApp
+
+* link:https://cloud.netapp.com/saas-backup[NetApp SaaS Backup]
+** Licensing for NetApp's SaaS backup service is included in VDMS.
+* link:https://azure.microsoft.com/en-us/services/netapp/[Azure NetApp Files (ANF)]
+** The data storage layer for deployments with more than 49 users is based on ANF.
+** For deployments with <250 users the standard performance tier is used.
+** For deployments with >249 users the premium performance tier is used.
+* link:https://cloud.netapp.com/cloud-backup[NetApp Cloud Backup]
+** NetApp Cloud Backup is used to backup ANF storage volumes.
+* link:https://cloud.netapp.com/cloud-sync-service[NetApp Cloud Sync]
+** NetApp Cloud Sync can be used to migrate data into VDMS when ANF is the data storage layer technology.
+* link:https://cloud.netapp.com/cloud-insights[NetApp Cloud Insights]
+** NetApp Cloud Insights is used by our support and services team for performance monitoring.
+* link:https://cloudjumper.zendesk.com[NetApp VDMS Support]
+** VDMS includes 24/7 incident support and in-boarding services provided by a specialized NetApp support team
+
+=== Microsoft
+
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets#storage-account-scale-targets[Azure Files (AF)]
+** The data storage layer for deployments with fewer than 50 users is based on AF technology. We configure the "transaction-optimized" tier in a GPv2 storage account.
+** For deployments with >49 users ANF is used.
+* link:https://azure.microsoft.com/en-us/services/backup/[Azure Cloud Backup]
+** Azure Cloud Backup is used to backup AF storage volumes and virtual machines.
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning[Azure File Sync]
+** Azure File Sync can be used to migrate data into VDMS when AF is the data storage layer technology.
+* link:https://azure.microsoft.com/en-us/services/azure-defender/[Azure Defender]
+** VDMS activates (and includes licensing for) Azure Defender, an advance security service on all virtual machines in the environment.  Management and administration is performed via the Azure Security Center by the customer and/or their IT service provider.  Managing Azure Security Center is not a service included in VDMS.
+* link:https://azure.microsoft.com/en-us/services/virtual-machines/windows/[Azure Virtual Machines]
+** VDMS relies heavily on Windows-based Azure virtual machines for hosting user sessions and customer applications.
+* link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Azure Virtual Network Peering]
+** VDMS may leverage Azure virtual network peering to integrate with the customer's existing Active Directory Domain Controller (AD DC).
+* link:https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways[Azure VPN]
+** VDMS may leverage Azure site-to-site VPN to integrate with the customer's existing Active Directory Domain Controller (AD DC).
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/overview[Windows Virtual Desktop (WVD)]
+** VDMS leverages native WVD functionality to support user session brokering, authentication, Windows licensing and more.
+* link:https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect[Azure AD Connect]
+** WVD requires that the local domain (AD DC) and Azure AD be in sync via the Azure AD Connect application.
+* link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/[Microsoft 365 (M365)]
+** WVD user sessions and Windows 10 Enterprise for the session hosts are licensed to the user via specific M365 license types.  Assigning the appropriate M365 licensing to all VDMS users is a WVD and VDMS requirement.  This licensing is not included in VDMS.  It is the responsibility of the customer and/or their IT service provider to manage M365 licensing.
