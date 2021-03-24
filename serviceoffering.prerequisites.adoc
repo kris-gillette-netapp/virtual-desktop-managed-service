@@ -62,7 +62,7 @@ Integrating VDMS with an existing Active Directory domain controller (AD DC) req
 A local domain admin account with domainjoin rights, on the existing domain is required to establish the integration.
 
 === Azure AD Connect
-WVD required that Azure AD be synced with the AD DC using AD Connect. If this is not already setup, this link:https://www.microsoft.com/en-us/download/details.aspx?id=47594[utility] will need to be installed and configured on your AD DC.
+WVD requires that Azure AD be synced with the AD DC using AD Connect. If this is not already setup, this link:https://www.microsoft.com/en-us/download/details.aspx?id=47594[utility] will need to be installed and configured on your AD DC.
 
 /=== Network Contributor Role for vNet Peering
 /=== Local Gateway Device Admin Rights to setup VPN
