@@ -89,7 +89,8 @@ entries:
 - title: VDMS FAQ's
   entries:
   - title: VDS Admin Permissions
-    url: /FAQ.vdsadminpermissions.adoc
+    url: /FAQ.vdsadminpermissions.html
+  
 #  - title: Reseller Relationship Security
 #    url: /
 #  - title: Support
