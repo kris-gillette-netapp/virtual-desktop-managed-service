@@ -1,0 +1,55 @@
+---
+sidebar: sidebar
+permalink: administration.pam.html
+summary: Gaining domain access to VDMS virtual machines
+keywords:
+---
+= Generate Domain Admin Credentials in VDMS
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+== Privileged Access Management
+VDMS admins can be given the "PAM Approver" role which enables the admin to grant PAM requests.
+
+PAM requests will generate a domain level admin account to be used to authenticate on VDMS VMs when the just-in-time local admin credentials are not sufficient.
+
+Any VDMS admin can submit a PAM request but only admins with the PAM Approver role can approve the requests.  A PAM Approver can both request and approve their own request.
+
+=== Submit a PAM Request
+.To submit a PAM request
+. Navigate to your admin username in the upper right corner and click "Settings"
+. Select the "PAM Requests" tab
+. Click "+ Add"
+.. Select a duration, after which these credentials will expire
+.. Choose the deployment
+.. Enter an email address that the credentials can be provided.  This can be any email address, allowing 3rd parties (e.g. a vendor) to be granted domain credentials.
+.. Enter a phone number that can receive text messages
+.. Enter any notes for the logs and for the PAM Approver to review.
+. Click "Add Request"
+
+=== Approve a PAM Request
+.To review and approve/reject a PAM request
+. . Navigate to your admin username in the upper right corner and click "Settings"
+. Select the "PAM Requests" tab and click on the request
+. Review the request  and click "Approve" or "Reject"
+. Enter any notes relevant to the approval/rejection decision
+
+=== Using PAM Generated Credentials
+Once approved, the provided email address is sent a confirmation email to activate their credentials:
+[.thumb]
+image:administration.pam-c2382.png[900,900]
+
+Following the "Activate Request" link will bring the user to the following page and send them a confirmation code via SMS.  They will also be asked to set a secure password.
+
+[.thumb]
+image:administration.pam-ea1ea.png[900,900]
+
+Upon successfully validating the account, the user receives a confirmation with their username.
+[.thumb]
+image:administration.pam-01f30.png[900,900]

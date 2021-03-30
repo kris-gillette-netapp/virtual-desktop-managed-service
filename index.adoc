@@ -5,7 +5,7 @@ summary: Welcome to the documentation portal for Virtual Desktop Managed Service
 keywords:
 ---
 
-= Virtual Desktop Managed Service documentation
+= Virtual Desktop Managed Service Documentation
 
 :toc: macro
 :hardbreaks:
@@ -18,38 +18,21 @@ keywords:
 
 [.lead]
 == Overview
-NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deploying and managing virtual desktops in the public cloud, delivered as a fully managed VDI as a Service platform. 
-
-//VIDEO HERE- TBD
-
-=== Virtual Desktop Managed Service benefits:
+NetApp's Virtual Desktop Managed Service (VDMS) solves the complexity of deploying and managing virtual desktops in the public cloud, delivered as a managed VDI as a Service platform.
 
 == Getting support
 
 Email support: VDSsupport@netapp.com
 
-Phone support: 844.645.6789 Ext. 2
+Phone Support: 844.645.6789
 
-link:https://cloudjumper.zendesk.com[VDS support portal]
+link:https://cloudjumper.zendesk.com[VDMS Support Portal]
 
 Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 
 * After hours (on-call) support available via phone only.
 
-== Additional resources
-
-=== Cost calculator
-==== Azure
-* link:https://v6.manage.cloudworkspace.com/cost-estimator[]
-
-=== Remote Desktop Services (RDS) clients
-* link:https://cwc.cloudworkspace.com/download/cwc-win-setup.exe[VDS RDS client for Windows]
-
-* link:https://login.cloudworkspace.com/[VDS web client]
-
-* link:https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients[Microsoft RD client]
-
-=== Windows Virtual Desktop (WVD) clients
+== Windows Virtual Desktop (WVD) clients
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-10[Microsoft WVD for Windows client]
 
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-web[Microsoft WVD web client]
@@ -60,8 +43,45 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 
 * link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-ios[Microsoft WVD for iOS client]
 
+== Service Components
+VDMS is a co-managed service offering that brings together multiple technologies from NetApp and Microsoft and applies best-practices learned over 20+ year in the EUC market.  Below a selected list of components are listed.  Not all components are used in all deployments due to varying customer requirements.
+=== NetApp
 
-=== Other downloads
-* link:https://cloudjumper.com/wp-content/uploads/2019/12/RemoteScanEnterpriseUser.zip[RemoteScan client]
+* link:https://cloud.netapp.com/saas-backup[NetApp SaaS Backup]
+** Licensing for NetApp's SaaS backup service is included in VDMS.
+* link:https://azure.microsoft.com/en-us/services/netapp/[Azure NetApp Files (ANF)]
+** The data storage layer for deployments with more than 49 users is based on ANF.
+** For deployments with <250 users the standard performance tier is used.
+** For deployments with >249 users the premium performance tier is used.
+* link:https://cloud.netapp.com/cloud-backup[NetApp Cloud Backup]
+** NetApp Cloud Backup is used to backup ANF storage volumes.
+* link:https://cloud.netapp.com/cloud-sync-service[NetApp Cloud Sync]
+** NetApp Cloud Sync can be used to migrate data into VDMS when ANF is the data storage layer technology.
+* link:https://cloud.netapp.com/cloud-insights[NetApp Cloud Insights]
+** NetApp Cloud Insights is used by our support and services team for performance monitoring.
+* link:https://cloudjumper.zendesk.com[NetApp VDMS Support]
+** VDMS includes 24/7 incident support and in-boarding services provided by a specialized NetApp support team
 
-* link:https://cloudjumper.com/cloudworkspaceclient/designer/Cloud%20Workspace%20Designer.exe[VDS RDS Windows client designer]
+=== Microsoft
+
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets#storage-account-scale-targets[Azure Files (AF)]
+** The data storage layer for deployments with fewer than 50 users is based on AF technology. We configure the "transaction-optimized" tier in a GPv2 storage account.
+** For deployments with >49 users ANF is used.
+* link:https://azure.microsoft.com/en-us/services/backup/[Azure Cloud Backup]
+** Azure Cloud Backup is used to backup AF storage volumes and virtual machines.
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning[Azure File Sync]
+** Azure File Sync can be used to migrate data into VDMS when AF is the data storage layer technology.
+* link:https://azure.microsoft.com/en-us/services/azure-defender/[Azure Defender]
+** VDMS activates (and includes licensing for) Azure Defender, an advance security service on all virtual machines in the environment.  Management and administration is performed via the Azure Security Center by the customer and/or their IT service provider.  Managing Azure Security Center is not a service included in VDMS.
+* link:https://azure.microsoft.com/en-us/services/virtual-machines/windows/[Azure Virtual Machines]
+** VDMS relies heavily on Windows-based Azure virtual machines for hosting user sessions and customer applications.
+* link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview[Azure Virtual Network Peering]
+** VDMS may leverage Azure virtual network peering to integrate with the customer's existing Active Directory Domain Controller (AD DC).
+* link:https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways[Azure VPN]
+** VDMS may leverage Azure site-to-site VPN to integrate with the customer's existing Active Directory Domain Controller (AD DC).
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/overview[Windows Virtual Desktop (WVD)]
+** VDMS leverages native WVD functionality to support user session brokering, authentication, Windows licensing and more.
+* link:https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect[Azure AD Connect]
+** WVD requires that the local domain (AD DC) and Azure AD be in sync via the Azure AD Connect application.
+* link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/[Microsoft 365 (M365)]
+** WVD user sessions and Windows 10 Enterprise for the session hosts are licensed to the user via specific M365 license types.  Assigning the appropriate M365 licensing to all VDMS users is a WVD and VDMS requirement.  This licensing is not included in VDMS.  It is the responsibility of the customer and/or their IT service provider to manage M365 licensing.

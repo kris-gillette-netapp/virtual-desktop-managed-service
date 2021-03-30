@@ -1,0 +1,70 @@
+---
+sidebar: sidebar
+permalink: serviceoffering.prerequisites.html
+summary: VDMS Prerequisites
+keywords:
+---
+= Virtual Desktop Managed Service (VDMS) prerequisites
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+== M365 Licensing
+VDMS is built with Microsoft Windows Virtual Desktop (WVD) technology. WVD prerequisites require that the end users be assigned specific Microsoft 365 (M365) licensing. This licensing is not included in the VDMS subscription and NetApp does not sell or otherwise offer this license.
+
+Responsibility for M365/WVD licensing compliance stays with the customer company, partner company and/or their M365 vendor.
+
+There are a variety of M365 plans that support the WVD licensing for VDMS, details can be link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/[found here].
+
+== M365/Azure AD Tenant
+The customer must have an existing Azure AD tenant. Microsoft 365 is based on the same Azure AD tenant structure, therefore meeting the M365 Licensing requirement (above) will also satisfy this requirement.
+
+== CSP Reseller Relationship
+NetApp deploys VDMS into a dedicated Azure subscription using our CSP relationship with Microsoft. To deploy this subscription, NetApp needs to establish a reseller relationship with the customer's Azure AD tenant. A Global Admin for the customer's Azure AD tenant can accept this relationship here:
+
+https://admin.microsoft.com/Adminportal/Home?invType=ResellerRelationship&partnerId=47c1f6d2-b112-48e0-915f-4304efffb3e8&msppId=0&DAP=true#/BillingAccounts/partner-invitation
+
+Multi-partner functionality does not:
+
+* Change any of the customer's existing subscriptions
+* Transition the customer's existing subscriptions or account ownership
+* Change the terms or customer's obligations for any of their existing subscriptions
+* Change the partner of record for a subscription
+* More details on this: https://docs.microsoft.com/en-us/partner-center/multipartner
+
+=== Delegated Admin Rights
+The invitation link (above) includes a request for delegated admin permissions. Acceptance will grant NetApp Global Admin and Helpdesk Admin roles in the customer's Azure AD tenant.
+
+== Virtual Network Scope
+VDMS will be deployed on a virtual network in Azure.  The /20 IP range used for this network can not overlap with other networks in their environment.
+
+In any scenario that adds network connectivity between the VDMS virtual network and any other customer network(s), overlap with another network IP range will break VDMS.  Therefore it is vital that a completely unused /20 range be dedicated to VDMS.
+
+The /20 network scope needs to land within one of these IP ranges:
+
+* 10.0.0.0 – 10.255.255.255
+* 172.16.0.0 – 172.31.255.255
+* 192.168.0.0 – 192.168.255.255
+
+== Deploy VDMS Worksheet
+The customer/partner needs to complete the Deploy VDMS worksheet at:
+https://www.deployvdms.com/
+
+== Existing AD Integration
+Integrating VDMS with an existing Active Directory domain controller (AD DC) requires several additional prerequisites:
+
+=== Local Domain Admin Credentials
+A local domain admin account with domainjoin rights, on the existing domain is required to establish the integration.
+
+=== Azure AD Connect
+WVD requires that Azure AD be synced with the AD DC using AD Connect. If this is not already setup, this link:https://www.microsoft.com/en-us/download/details.aspx?id=47594[utility] will need to be installed and configured on your AD DC.
+
+/=== Network Contributor Role for vNet Peering
+/=== Local Gateway Device Admin Rights to setup VPN
+/=== DNS Zones (need more tech info)
+/=== no multi-domain forrest, Users must be in the domain we are deploying to

@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+permalink: FAQ.vdsadminpermissions.html
+summary: Summary of VDS admin permissions
+keywords:
+---
+= VDS Admin Permissions
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+== Admin Permissions Overview
+VDMS admins have limited access to the VDS administration portal.  Because VDMS is a co-managed solution there are permission sets that are not enabled for VDMS admins.  These actions are reserved for the NetApp support team.  If there are actions needed that can not be performed due to permission limitations, please contact support for assistance.
+
+== Account Type Settings
+Within the VDMS admin account, the following settings are default.
+[%header, cols=3*]
+|===
+|Type |Default Value |Notes
+
+|Tech Account |False |Can be changed upon request to NetApp Support.
+
+When enabled, admin is prompted for credentials when connecting to any VM via the VDS portal.
+
+When disabled, admin is automatically authenticated (with auto-generated local admin account) when connecting to any tenant VM via the VDS portal.  Admins are still prompted for credentials when connecting to any platform server VMs.
+
+|link:administration.pam.html[PAM Approver] |True	|Can be changed upon request to NetApp Support.
+
+All customer's must have at least one admin account enabled as PAM Approver.
+
+|User Support	|False	|This feature does not apply to VDMS.
+
+|Shadow User	|True	|Can be changed upon request to NetApp Support.
+
+When enabled, the admin is able to connect to an end user's session and see what they see for providing end user support.
+
+|MFA Enabled	|True	|Requires that the admin's access to the VDMS administration portal be secured using built-in MFA.  SMS and/or email methods are supported.
+
+|===
+
+== Admin Account Permissions
+Within the VDMS admin account, the following permissions are default.
+
+[%header, cols=6*]
+|===
+|Module |View |Edit |Delete |Add |Notes
+
+|App Services |Off	|Off	|Off	|Off	|The App Services feature set is not a supported feature in VDMS.
+|Clients	|On	|On	|Off	|Off	|Client creation/removal is handled by NetApp Support.
+
+|Deployments	|On	|On	|Off	|Off	|Deployment creation/removal is handled by NetApp Support.
+
+|Groups	|On	|On	|Off	|On	|Deleting user groups is handled by NetApp Support.  Certain user groups are required
+
+|Partners	|Off	|Off	|Off	|Off	|The Partners feature set is not a supported feature in VDMS.
+
+|Provisioning Templates |On	|On	|Off	|Off	|Image creation/removal is handled by NetApp Support.
+
+|Resources	|On	|Off	|Off	|Off	|Resource settings are handled by NetApp Support.
+
+|Servers	|On	|On	|Off	|Off	|Server creation/removal settings are handled by NetApp Support.
+
+|Workspaces	|On	|On	|Off	|Off	|Workspace creation/removal is handled by NetApp Support.
+
+|Applications |Off	|Off	|Off	|Off	|The Applications feature-set in VDS is RDS-specific.  VDMS is a WVD-based service and application management is not handled with this function.  See link:mages.updateimages.html[update and deploy images] for details on application delivery for VDMS.
+
+|Audits |On	|On	|On	|On |
+|Firewall Rules |On	|On	|On	|On |
+|Folders |On	|On	|On	|On |
+|Admin	|On	|Off	|On	|Off	|Adding admin accounts and/or changing admin permissions is handled by NetApp Support.
+|Reports |On	|On	|On	|On |
+|Scripted Events |On	|On	|On	|On |
+|Service Board |On	|On	|On	|On |
+|Settings |On	|On	|On	|On |
+|Users |On	|On	|On	|On |
+|===
