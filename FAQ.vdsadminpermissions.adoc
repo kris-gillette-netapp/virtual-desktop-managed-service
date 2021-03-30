@@ -58,7 +58,7 @@ Within the VDMS admin account, the following permissions are default.
 |Firewall Rules |On	|On	|On	|On |
 |Folders |On	|On	|On	|On |
 |Groups	|On	|On	|Off	|On	|Deleting user groups is handled by NetApp Support.  Certain user groups are required
-|Partners	|Off	|Off	|Off	|Off	|The Partners feature set is not a supported feature in VDMS.
+|Partners	|On	|Off	|Off	|Off	|The Partners feature set is not a supported feature in VDMS. View permissions required to display tenant lists.
 |Provisioning Templates |On	|On	|Off	|Off	|Image creation/removal is handled by NetApp Support.
 |Reports |On	|On	|On	|On |
 |Resources	|On	|Off	|Off	|Off	|Resource settings are handled by NetApp Support.
