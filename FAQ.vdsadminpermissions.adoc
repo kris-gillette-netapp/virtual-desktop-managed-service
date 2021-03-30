@@ -49,33 +49,23 @@ Within the VDMS admin account, the following permissions are default.
 [%header, cols=6*]
 |===
 |Module |View |Edit |Delete |Add |Notes
-
+|Admin	|On	|Off	|On	|Off	|Adding admin accounts and/or changing admin permissions is handled by NetApp Support.
 |App Services |Off	|Off	|Off	|Off	|The App Services feature set is not a supported feature in VDMS.
-|Clients	|On	|On	|Off	|Off	|Client creation/removal is handled by NetApp Support.
-
-|Deployments	|On	|On	|Off	|Off	|Deployment creation/removal is handled by NetApp Support.
-
-|Groups	|On	|On	|Off	|On	|Deleting user groups is handled by NetApp Support.  Certain user groups are required
-
-|Partners	|Off	|Off	|Off	|Off	|The Partners feature set is not a supported feature in VDMS.
-
-|Provisioning Templates |On	|On	|Off	|Off	|Image creation/removal is handled by NetApp Support.
-
-|Resources	|On	|Off	|Off	|Off	|Resource settings are handled by NetApp Support.
-
-|Servers	|On	|On	|Off	|Off	|Server creation/removal settings are handled by NetApp Support.
-
-|Workspaces	|On	|On	|Off	|Off	|Workspace creation/removal is handled by NetApp Support.
-
 |Applications |Off	|Off	|Off	|Off	|The Applications feature-set in VDS is RDS-specific.  VDMS is a WVD-based service and application management is not handled with this function.  See link:mages.updateimages.html[update and deploy images] for details on application delivery for VDMS.
-
 |Audits |On	|On	|On	|On |
+|Clients	|On	|On	|Off	|Off	|Client creation/removal is handled by NetApp Support.
+|Deployments	|On	|On	|Off	|Off	|Deployment creation/removal is handled by NetApp Support.
 |Firewall Rules |On	|On	|On	|On |
 |Folders |On	|On	|On	|On |
-|Admin	|On	|Off	|On	|Off	|Adding admin accounts and/or changing admin permissions is handled by NetApp Support.
+|Groups	|On	|On	|Off	|On	|Deleting user groups is handled by NetApp Support.  Certain user groups are required
+|Partners	|Off	|Off	|Off	|Off	|The Partners feature set is not a supported feature in VDMS.
+|Provisioning Templates |On	|On	|Off	|Off	|Image creation/removal is handled by NetApp Support.
 |Reports |On	|On	|On	|On |
+|Resources	|On	|Off	|Off	|Off	|Resource settings are handled by NetApp Support.
 |Scripted Events |On	|On	|On	|On |
+|Servers	|On	|On	|Off	|Off	|Server creation/removal settings are handled by NetApp Support.
 |Service Board |On	|On	|On	|On |
 |Settings |On	|On	|On	|On |
 |Users |On	|On	|On	|On |
+|Workspaces	|On	|On	|Off	|Off	|Workspace creation/removal is handled by NetApp Support.
 |===
