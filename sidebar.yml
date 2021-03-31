@@ -8,7 +8,7 @@ entries:
 #    url: /
 #  - title: Licensing WVD
 #    url: /
-  - title: Prerequsites
+  - title: Prerequisites
     url: /serviceoffering.prerequisites.html
 #  - title: Service Responsibilities
 #    url: /serviceoffering.responsibilities.html
@@ -90,7 +90,7 @@ entries:
   entries:
   - title: VDS Admin Permissions
     url: /FAQ.vdsadminpermissions.html
-  
+
 #  - title: Reseller Relationship Security
 #    url: /
 #  - title: Support
