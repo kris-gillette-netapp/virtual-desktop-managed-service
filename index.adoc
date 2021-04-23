@@ -45,6 +45,7 @@ Normal support business hours: Monday-Friday, 7:00am-7:00pm Central Time.
 
 == Service Components
 VDMS is a co-managed service offering that brings together multiple technologies from NetApp and Microsoft and applies best-practices learned over 20+ year in the EUC market.  Below a selected list of components are listed.  Not all components are used in all deployments due to varying customer requirements.
+
 === NetApp
 
 * link:https://cloud.netapp.com/saas-backup[NetApp SaaS Backup]
