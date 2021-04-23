@@ -19,7 +19,7 @@ keywords:
 Virtual Desktop Managed Service (VDMS) is NetApp’s managed DaaS solution that allows you to outsource virtual desktop provisioning, deployment, and infrastructure allowing you to focus on your users and applications for a single monthly fee per user.
 
 [.thumb]
-image::media/landing.gettingstarted-3b8c5.png[]
+image::landing.gettingstarted-3b8c5.png[]
 
 == Setting up VDMS
 
