@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/FAQ.vdsadminpermissions.html</loc>
+      
+      <lastmod>2021-03-30T18:43:15+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/administration.pam.html</loc>
+      
+      <lastmod>2021-03-15T16:21:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/applications.installapplications.html</loc>
+      
+      <lastmod>2021-06-16T19:53:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/images.updateimages.html</loc>
+      
+      <lastmod>2021-03-23T19:58:03+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/</loc>
+      
+      <lastmod>2021-04-23T16:26:57+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/landing.gettingstarted.html</loc>
+      
+      <lastmod>2021-04-23T17:39:58+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service//search.html</loc>
+      
+      <lastmod>2021-06-16T19:55:13+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/serviceoffering.prerequisites.html</loc>
+      
+      <lastmod>2021-03-24T20:19:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/serviceoffering.responsibilities.html</loc>
+      
+      <lastmod>2021-03-17T19:47:24+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/serviceoffering.servicesummary.html</loc>
+      
+      <lastmod>2021-03-24T16:34:37+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/us-en/virtual-desktop-managed-service/users.assigntoappgroup.html</loc>
+      
+      <lastmod>2021-03-15T16:21:57+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>

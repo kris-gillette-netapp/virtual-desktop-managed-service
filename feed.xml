@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virtual-desktop-managed-service | NetApp Cloud Docs</title>
+    <atom:link href="https://docs.netapp.com/us-en/virtual-desktop-managed-service/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/us-en/virtual-desktop-managed-service</link>
+    <description>The latest updates from NetApp Cloud Docs</description>
+    <language>en-us</language>
+    <ttl>60</ttl>
+    <pubDate>Wed, 16 Jun 2021 19:57:34 +0000</pubDate>
+    <lastBuildDate>Wed, 16 Jun 2021 19:57:34 +0000</lastBuildDate>
+    
+  </channel>
+</rss>
