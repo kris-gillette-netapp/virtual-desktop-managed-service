@@ -29,11 +29,11 @@ image:applications.installapplications-171af.png[900,900]
 If domain admin credentials are required, VDMS privileged access management (PAM) functionality to generate domain admin credentials.  Details can be link:administration.pam.html[found here].
 
 === VDMS Automation
-With the VDMS portal, the "Scripted Events" section includes functionality to remotely execute code.
+With the VDMS portal, the "Scripted Events" section includes functionality to remotely run code.
 
 Within Scripted Events, the Repository tab contains "global" scripts that are published by NetApp.  Custom scripts can be added using the "+ Add Script" button.
 
-Within Scripted Events, the Activities tab contains the trigger that causes a script to execute against a set of VMs. For VDMS, the "Manual" and "Scheduled" event types are best to push a script across the appropriate virtual machines.
+Within Scripted Events, the Activities tab contains the trigger that causes a script to run against a set of VMs. For VDMS, the "Manual" and "Scheduled" event types are best to push a script across the appropriate virtual machines.
 
 NOTE: Activities have many available triggers called "Event Types". For VDMS, the "Application Install" and "Application Uninstall" types do not apply. These are RDS-specific triggers and should not be used for VDMS since VDMS is a WVD-based service, and does to follow the design architecture of RDS.
 
