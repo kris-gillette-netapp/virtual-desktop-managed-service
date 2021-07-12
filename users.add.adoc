@@ -1,0 +1,65 @@
+---
+sidebar: sidebar
+permalink: users.add.html
+summary: Adding User Access in VDMS
+keywords:
+---
+= Adding User Access
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+== New User Creation
+.New Active Directory deployments (a new Active Directory domain was created for VDMS)
+. Create the user in VDS
+.. Navigate to the workspace, select the "Users & Groups" tab, click "Add", and select "Add User"
+[.thumb]
+image:users.addremove01.png[900,900]
+.. Fill in the user's information then click "Add User"
+[.thumb]
+image:users.addremove02.png[900,900]
+
+. Notify NetApp of the additional user using one of the methods below
+.. Email support: VDSsupport@netapp.com
+.. Phone Support: 844.645.6789
+.. link:https://cloudjumper.zendesk.com[VDMS Support Portal]
+
+. Assign the user to their host pool
+.. On the users and groups tab, click on the user group linked to the host pool. For example, the group "kift WVD Shared" is linked to the WVD Shared host pool in VDMS.  All users added to "kift WVD Shared" will be assigned access to the session hosts in the "WVD Shared" host pool.
+[.thumb]
+image:users.addremove03.png[900,900]
+.. Click on the edit icon inthe top right of the Users box then click "Add Users"
+[.thumb]
+image:users.addremove04.png[900,900]
+.. Check the box next to the user(s) to be added then click "Continue"
+[.thumb]
+image:users.addremove05.png[900,900]
+.. More detailed instructions can be found link:users.assigntoappgroup.html[here]
+
+.Existing Active Directory deployments (VDMS is connecting to an existing Active Directory)
+. Create the user in Active Directory as you normally would
+. Add the user to the Active Directory Group that is listed on the deployment
+[.thumb]
+image:users.addremove06.png[900,900]
+. Enable cloudworkspace
+. Notify NetApp of the additional user using one of the methods below
+.. Email support: VDSsupport@netapp.com
+.. Phone Support: 844.645.6789
+.. link:https://cloudjumper.zendesk.com[VDMS Support Portal]
+
+. Assign the user to their host pool
+.. On the users and groups tab, click on the user group linked to the host pool. For example, the group "kift WVD Shared" is linked to the WVD Shared host pool in VDMS.  All users added to "kift WVD Shared" will be assigned access to the session hosts in the "WVD Shared" host pool.
+[.thumb]
+image:users.addremove03.png[900,900]
+.. Click on the edit icon inthe top right of the Users box then click "Add Users"
+[.thumb]
+image:users.addremove04.png[900,900]
+.. Check the box next to the user(s) to be added then click "Continue"
+[.thumb]
+image:users.addremove05.png[900,900]
+.. More detailed instructions can be found link:users.assigntoappgroup.html[here]

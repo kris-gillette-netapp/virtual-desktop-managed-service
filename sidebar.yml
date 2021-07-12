@@ -30,8 +30,9 @@ entries:
     url: /users.assigntoappgroup.html
   - title: Get Domain Admin Credentials
     url: /administration.pam.html
-
-#  - title: Add/Remove User Access
+#  - title: Add User Access
+#    url: /users.add.html
+#  - title: Remove User Access
 #    url: /
 #  - title: Assign Folder Permissions
 #    url: /
