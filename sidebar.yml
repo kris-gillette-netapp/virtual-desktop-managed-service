@@ -30,10 +30,10 @@ entries:
     url: /users.assigntoappgroup.html
   - title: Get Domain Admin Credentials
     url: /administration.pam.html
-#  - title: Add User Access
-#    url: /users.add.html
-#  - title: Remove User Access
-#    url: /users.remove.html
+  - title: Add User Access
+    url: /users.add.html
+  - title: Remove User Access
+    url: /users.remove.html
 #  - title: Assign Folder Permissions
 #    url: /
 #  - title: Restore from VM Backups
