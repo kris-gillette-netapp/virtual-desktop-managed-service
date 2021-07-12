@@ -33,7 +33,7 @@ entries:
 #  - title: Add User Access
 #    url: /users.add.html
 #  - title: Remove User Access
-#    url: /
+#    url: /users.remove.html
 #  - title: Assign Folder Permissions
 #    url: /
 #  - title: Restore from VM Backups
