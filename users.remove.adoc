@@ -40,7 +40,7 @@ image:users.remove02.png[900,900]
 image:users.remove01.png[900,900]
 .. A pop up pwill appear with options to Delay Deletion and Delete From Directory
 [.thumb]
-image:users.remove02.png[900,900]
+image:users.remove03.png[900,900]
 ... The Delay Deletion option will wait 90 minutes before deleting the user, which allows for the process to be cancelled. It is recommended to check this box.
 ... The Delete From Directory option will delete the Active Directory user account. It is recommended this box is NOT checked, and your organizations user account deletion process be followed to delete the account from Active Directory. 
 
