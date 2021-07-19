@@ -34,6 +34,8 @@ entries:
     url: /users.add.html
   - title: Remove User Access
     url: /users.remove.html
+  - title: Add/Remove Admins
+    url: /administration.addremoveadmins.html
 #  - title: Assign Folder Permissions
 #    url: /
 #  - title: Restore from VM Backups

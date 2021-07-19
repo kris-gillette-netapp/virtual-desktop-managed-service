@@ -1,0 +1,40 @@
+---
+sidebar: sidebar
+permalink: administration.addremoveadmins.html
+summary: Adding and Removing Admins in VDMS
+keywords:
+---
+= Adding and Removing Admins in VDMS
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+:keywords:
+
+== Adding Admins in VDMS
+- This process is handled by NetApp
+- Contact NetApp VDMS support using one of the methods below:
+    . Email support: VDSsupport@netapp.com
+    . Phone Support: 844.645.6789
+    . link:https://cloudjumper.zendesk.com[VDMS Support Portal]
+- Please include the following for the new admin account:
+    . Partner code
+    . First and last name
+    . Email address
+    . If any permissions differ from the default set that are outlined in the link:FAQ.vdsadminpermissions.html[admin permissions]
+
+== Removing Admins in VDMS
+- This process is handled by partners
+    . Navigate to the "Admins" tab
+    . Click the Action dots to the right of the admin you would like to remove
+    . Click "Delete"
+    . A confirmation box will appear; click on "Yes, I'm sure"
+[.thumb]
+image:administration.addremoveadmins01.png[900,900]
+- If you have any questions, contact NetApp VDMS support using one of the methods below:
+    . Email support: VDSsupport@netapp.com
+    . Phone Support: 844.645.6789
+    . link:https://cloudjumper.zendesk.com[VDMS Support Portal]
