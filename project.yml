@@ -1,3 +1,12 @@
+---
+settings:
+  name: Virtual Desktop Managed Service
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: true
+    langs: us-en,ja-jp,zh-cn
 sidebar:
   entries:
   - title: VDMS Documentation
