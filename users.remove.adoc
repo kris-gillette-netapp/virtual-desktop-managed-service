@@ -21,7 +21,7 @@ keywords:
 .. Navigate to the workspace, select the "Users & Groups" tab, click the action dots next to the user to be deleted, then click "Delete"
 [.thumb]
 image:users.remove01.png[900,900]
-.. A pop up pwill appear with options to Delay Deletion and Delete From Directory
+.. A pop up will appear with options to Delay Deletion and Delete From Directory
 [.thumb]
 image:users.remove02.png[900,900]
 ... The Delay Deletion option will wait 90 minutes before deleting the user, which allows for the process to be cancelled. It is recommended to check this box.
